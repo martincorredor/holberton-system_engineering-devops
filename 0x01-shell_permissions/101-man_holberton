@@ -1,0 +1,17 @@
+.TH man 2 "04 de mayo de 2015" "0.32" "página del manual de holberton"
+.SH NOMBRE
+.B holberton
+- Conviértete en un ingeniero de software de pila completa.
+.SH SINOPSIS
+holberton [NOMBRE DEL ESTUDIANTE]
+.SH DESCRIPCIÓN
+Holberton School es una alternativa a la universidad basada en proyectos para la próxima generación de ingenieros de software.
+.SH OPCIONES
+.B holberton
+No toma ninguna opción. Sin embargo, puede proporcionar el nombre del alumno.
+.SH VER TAMBIÉN
+Peerlearning (2), basado en proyectos (2), fullstack (2), Betty (1)
+.SH ERRORES
+No se conocen errores.
+.SH AUTOR
+Julien Barbier, Sylvain Kalache, Sophie Barbier, Guillaume Salva, Kris Bredemeier, Julien Cyr, Alex Gautier y todos los mentores de Holberton
