@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-ps
+#Gets the pid of this program
+echo $$
