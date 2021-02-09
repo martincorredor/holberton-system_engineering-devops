@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Writes "I am alive!" to /tmp/my_process nonstop.
+t="True"
+while [ $t ]
+do
+    echo "I am alive!" >> /tmp/my_process
+    sleep 2
+done
