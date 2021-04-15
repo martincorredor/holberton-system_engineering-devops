@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# display information about subdomains
+
+print_sub_domains (){
+if [ $# -eq 1 ];
+then
+    SUB_DOMAINS="www.$1 lb-01.$1 web-01.$1 web-02.$1"
+elif [ $# -eq 2 ];
+then
+    SUB_DOMAINS="$2.$1"
+fi
+if [ $# -gt 0 ];
+then
+    dig $SUB_DOMAINS | awk '/ANSWER SECTION:/ { getline; split($1, a, "."); print "The subdomain", a[1], "is a", $4, "record and points to", $5}'
+fi
+exit 0
+}
+
+print_sub_domains $1 $2
