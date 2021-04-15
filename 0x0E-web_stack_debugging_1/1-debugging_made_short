@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# fix for port 80 
-sudo sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
-sudo service nginx restart
-sudo service nginx stop
+# Resolves the problems with the server, debugging 01.
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+pkill -1f nginx
